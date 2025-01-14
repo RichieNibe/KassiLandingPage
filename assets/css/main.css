@@ -394,6 +394,6 @@ h1 {
 /* Small Mobile Styles (max-width: 480px) */
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 10px;
     }
 }
