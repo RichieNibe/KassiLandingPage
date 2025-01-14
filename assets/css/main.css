@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #4834E1;
+    --primary-color: #2F1893;
     --accent-color: #24E3C3;
     --text-color: #ffffff;
     --font-family: 'Inter', sans-serif;
@@ -13,10 +13,13 @@
 
 body {
     font-family: var(--font-family);
-    background-color: var(--primary-color);
     color: var(--text-color);
     line-height: 1.6;
 }
+
+/* .sub-heading {
+    background-color: var(--primary-color);
+} */
 
 .container {
     max-width: 1200px;
@@ -26,7 +29,9 @@ body {
 
 /* Header Styles */
 .header {
+    background-color: var(--primary-color);
     padding: 2rem 0;
+
 }
 
 .navbar {
@@ -52,10 +57,12 @@ body {
 .hero {
     padding: 6rem 0;
     text-align: center;
+    background-color: var(--primary-color);
 }
 
 h1 {
     font-size: 4rem;
+    text-align: center;
     font-weight: 700;
     margin-bottom: 2rem;
     line-height: 1.2;
@@ -78,23 +85,48 @@ h1 {
     padding: 1rem;
     border: none;
     border-radius: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-color);
+    background: rgba(119, 119, 119, 0.1);
+    /* color: var(--text-color); */
     margin-right: 1rem;
 }
 
-.btn-waitlist {
+.btn-waitlist-purple {
     padding: 1rem 2rem;
     border: none;
     border-radius: 50px;
-    background-color: var(--accent-color);
+    background-color: #482BE7;
     color: var(--text-color);
     font-weight: 600;
     cursor: pointer;
     transition: opacity 0.3s;
 }
 
-.btn-waitlist:hover {
+.btn-waitlist-white {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn-waitlist-teal {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--accent-color);
+    font-weight: 900;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn-waitlist-purple:hover {
+    opacity: 0.9;
+}
+
+.btn-waitlist-white:hover {
     opacity: 0.9;
 }
 
@@ -123,5 +155,129 @@ h1 {
 
     .btn-waitlist {
         width: 100%;
+    }
+}
+
+.ai-features {
+    padding: 2rem;
+    max-width: 500px;
+}
+
+.feature {
+    margin-bottom: 2.5rem;
+}
+
+.feature-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.feature-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.ai-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    padding: 1.5rem;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    color: #1a1a1a;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .ai-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ai-features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.integrations {
+    background-color: var(--primary-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.integrations-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.integration-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.integration-card {
+    background-color: var(--primary-color);
+    /* border-color: #; */
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.integration-logo {
+    max-width: 150px;
+    height: auto;
+    filter: none;
+    /* Makes logos white */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .integration-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .integrations-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .integration-grid {
+        grid-template-columns: 1fr;
     }
 }
