@@ -281,3 +281,47 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.features-container {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 7rem;
+    padding: 2rem;
+}
+
+.ai-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.macbook-container {
+    width: 100%;
+    max-width: 700px;
+    align-self: center;
+}
+
+.macbook-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .macbook-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
