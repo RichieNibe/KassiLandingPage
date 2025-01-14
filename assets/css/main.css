@@ -345,7 +345,7 @@ h1 {
 
     /* Container adjustments */
     .container {
-        padding: 0 17px;
+        padding: 0 15px;
     }
 
     /* Main layout */
@@ -364,7 +364,7 @@ h1 {
         position: static;
         width: 100%;
         transform: none;
-        margin: 20px 0;
+        margin: 15px 0;
     }
 
     /* Waitlist form */
@@ -383,7 +383,7 @@ h1 {
 
     /* Typography */
     h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     p {
