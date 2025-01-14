@@ -359,6 +359,10 @@ h1 {
         margin: 0;
     }
 
+    .feature-card {
+        padding: 1rem;
+    }
+
     /* MacBook image */
     .macbook-container {
         position: static;
@@ -378,6 +382,14 @@ h1 {
     }
 
     .btn-waitlist-teal {
+        width: 100%;
+    }
+
+    .btn-waitlist-purple {
+        width: 100%;
+    }
+
+    .btn-waitlist-white {
         width: 100%;
     }
 
