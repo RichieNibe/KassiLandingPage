@@ -359,8 +359,8 @@ h1 {
         margin: 0;
     }
 
-    .feature-card {
-        padding: 1rem;
+    .ai-features-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /* MacBook image */
