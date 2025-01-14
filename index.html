@@ -39,10 +39,15 @@
           connections that generate pipeline.
         </p>
 
-        <div class="waitlist-form">
-          <input type="email" placeholder="Your email" class="email-input">
-          <button type="submit" class="btn-waitlist-teal">Waitlist</button>
+        <form class="waitlist-form" id="waitlistForm">
+          <input style="color: white;" type="email" placeholder="Your email" class="email-input" id="emailInput"
+            required>
+          <button type="submit" class="btn-waitlist-teal" id="submitButton">Waitlist</button>
+          <div class="status-message" id="statusMessage"></div>
           <p class="terms">By signing up, you agree to the Terms of Service</p>
+        </form>
+        <div class="success-message hidden" id="successMessage">
+          You have been added to the waitlist
         </div>
       </div>
     </section>
@@ -166,15 +171,18 @@
     <div class="feature-card">
       <h1 style="color: #2F1893;">Grow Your Revenue Pipeline <br> with <br> Kassie AI</h1>
 
-      <!-- <div style="align-items: center; color: #151439;"> Join the waitlist to try for <br>free </div> -->
+      <!-- <form class="waitlist-form" id="waitlistForm">
+        <input type="email" placeholder="Your email" class="email-input" id="emailInput" required>
+        <button type="submit" class="btn-waitlist-purple" id="submitButton">Waitlist</button>
+        <div class="status-message" id="statusMessage"></div>
+      </form>
+      <div class="success-message hidden" id="successMessage"> You have been added to the waitlist</div> -->
 
-      <div class="waitlist-form">
-        <input type="email" placeholder="Your email" class="email-input">
-        <button type="submit" class="btn-waitlist-purple">Waitlist</button>
-      </div>
+    </div>
     </div>
     </div>
   </section>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

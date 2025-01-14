@@ -325,3 +325,16 @@ h1 {
         margin: 0 auto;
     }
 }
+
+.hidden {
+    display: none;
+}
+
+.status-message {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.success-message {
+    font-weight: 500;
+}
