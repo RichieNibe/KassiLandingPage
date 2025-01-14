@@ -3,6 +3,8 @@
     --accent-color: #24E3C3;
     --text-color: #ffffff;
     --font-family: 'Inter', sans-serif;
+    --container-padding-mobile: 20px;
+    --container-padding-desktop: 40px;
 }
 
 * {
@@ -337,4 +339,61 @@ h1 {
 
 .success-message {
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+
+    /* Container adjustments */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Main layout */
+    .main-container {
+        flex-direction: column;
+    }
+
+    /* Features section */
+    .features-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* MacBook image */
+    .macbook-container {
+        position: static;
+        width: 100%;
+        transform: none;
+        margin: 20px 0;
+    }
+
+    /* Waitlist form */
+    .waitlist-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email-input {
+        width: 100%;
+    }
+
+    .btn-waitlist-teal {
+        width: 100%;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile Styles (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
 }
