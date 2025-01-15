@@ -24,7 +24,6 @@ body {
 } */
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -40,6 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .logo {
@@ -52,7 +52,7 @@ body {
 .nav-links a {
     color: var(--text-color);
     text-decoration: none;
-    margin-left: 2rem;
+
 }
 
 /* Hero Section */
