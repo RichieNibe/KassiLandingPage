@@ -398,10 +398,3 @@ h1 {
         font-size: 16px;
     }
 }
-
-/* Small Mobile Styles (max-width: 480px) */
-@media (max-width: 480px) {
-    .container {
-        padding: 0 10px;
-    }
-}
