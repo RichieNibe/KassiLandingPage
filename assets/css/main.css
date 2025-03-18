@@ -71,41 +71,86 @@ h1 {
 .waitlist-form {
     max-width: 555px;
     margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .email-input {
-    width: 70%;
+    width: 65%;
+    max-width: 400px;
     padding: 1rem;
     border: none;
     border-radius: 50px;
     background: rgba(119, 119, 119, 0.1);
-    /* color: var(--text-color); */
     margin-right: 1rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    min-width: 200px;
 }
 
 .email-input-bottom {
-    width: 70%;
+    width: 65%;
+    max-width: 400px;
     margin-top: 1rem;
     padding: 1rem;
     border: none;
     border-radius: 50px;
     background: white;
     margin-right: 1rem;
+    flex-grow: 1;
+    min-width: 200px;
 }
 
 .join-waitlist-btn {
     display: inline-block;
-    padding: 0.6rem 1.2rem;
+    padding: 1rem 1.5rem;
     border-radius: 24px;
     font-weight: 500;
     color: #fff;
-    /* Example purple gradient */
     background: #9A1DFC;
     transition: opacity 0.3s;
+    white-space: nowrap;
 }
 
 .join-waitlist:hover {
     opacity: 0.8;
+}
+
+/* Responsive adjustments for forms */
+@media (max-width: 768px) {
+    .waitlist-form {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .email-input,
+    .email-input-bottom {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .join-waitlist-btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .email-input,
+    .email-input-bottom {
+        padding: 0.75rem;
+        font-size: 14px;
+    }
+
+    .join-waitlist-btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 14px;
+    }
 }
 
 /* Responsive (Optional) */
@@ -328,6 +373,30 @@ h1 {
     opacity: 0.9;
     /* subtle fade */
     transition: opacity 0.2s ease;
+}
+
+/* Special sizing for Gong logo */
+.logo-row img[alt="Gong"] {
+    max-height: 80px;
+    /* Increased size for Gong logo */
+}
+
+/* Special sizing for Outreach logo */
+.logo-row img[alt="Outreach"] {
+    max-height: 100px;
+    /* Increased size for Outreach logo */
+}
+
+/* Special sizing for Salesloft logo */
+.logo-row img[alt="Salesloft"] {
+    max-height: 70px;
+    /* Increased size for Salesloft logo */
+}
+
+/* Special sizing for Apollo logo */
+.logo-row img[alt="Apollo.io"] {
+    max-height: 65px;
+    /* Increased size for Apollo logo */
 }
 
 .logo-row img:hover {
