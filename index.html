@@ -2,199 +2,179 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kassie.ai - AI Sales Execution Platform</title>
-  <link rel="icon" type="image/x-icon" href="assets/css/images/KassieAI Logo_Favicon.png">
+  <link rel="stylesheet" href="assets/css/main.css" />
   <meta name="description" content="AI Sales Execution Platform that eliminates tedious tasks">
   <meta name="keywords" content="AI, Sales, BDR, AE, Pipeline">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Fonts  -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Optional: Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <nav class="navbar">
-        <img src="assets/css/images/KassieAI Logo_WHITE web header.png" alt="KassieAI Logo" class="logo">
-        <div class="nav-links">
-          <a href="#waitlist" class="btn-waitlist-white" style="color: #2F1893;">Waitlist</a>
-        </div>
-      </nav>
+
+  <header class="top-header">
+    <!-- Left: Logo -->
+    <div class="logo-area">
+      <img src="assets/images/kassie-logo.svg" alt="Kassie Logo" />
+    </div>
+
+    <!-- Center: Navigation Menu -->
+    <nav class="nav-center">
+      <!-- <ul class="main-nav">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul> -->
+    </nav>
+
+    <!-- Right: CTA Button -->
+    <div class="cta-btn">
+      <a href="#" class="join-waitlist-btn">Join Waitlist</a>
     </div>
   </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Increase Revenue <br> Pipeline with Kassie AI</h1>
-        <p class="subtitle">
-          Our AI Sales Execution Platform eliminates tedious tasks,<br>
-          letting your BDRs and AEs focus on building human<br>
-          connections that generate pipeline.
-        </p>
-
-        <form class="waitlist-form" id="waitlistForm">
-          <input style="color: white;" type="email" placeholder="Your email" class="email-input" id="emailInput"
-            required>
-          <button type="submit" class="btn-waitlist-teal" id="submitButton">Waitlist</button>
-          <div class="status-message" id="statusMessage"></div>
-          <p class="terms">By signing up, you agree to the Terms of Service</p>
-        </form>
-        <div class="success-message hidden" id="successMessage">
-          You have been added to the waitlist
-        </div>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <h1>Increase Revenue <br> Pipeline With <span class="gradient-text ">Kassie AI</span></h1>
+      <p class="hero-subtitle">
+        Our AI Pipeline Generation Platform eliminates tedious tasks, letting your SDRs and AEs
+        focus on building human connections that generate revenue
+      </p>
+      <form class="waitlist-form" id="waitlistForm">
+        <input type="email" placeholder="Your email" class="email-input" id="emailInput" required>
+        <button type="submit" class="join-waitlist-btn" id="submitButton">Join Waitlist</button>
+        <div class="status-message" id="statusMessage"></div>
+      </form>
+      <div class="success-message hidden" id="successMessage">
+        You have been added to the waitlist
       </div>
-    </section>
-  </main>
-  <section>
-    <div class="container">
-      <h1 style="color: #2F1893; padding: 1rem 0;"> Empower your team to <br> outperform with Kassie AI </h1>
     </div>
   </section>
-  <div class="main-container">
-    <!-- Left Container -->
-    <div class="features-container">
-      <div class="ai-features">
-        <section class="feature">
-          <h2 class="feature-title">AI DIALER</h2>
-          <p class="feature-description">
-            Achieve more calls, connections, and conversations effortlessly—Kassie AI handles everything: finding
-            numbers, dialing, bypassing voicemails, leaving messages, and even taking notes, so you can focus on
-            creating sales pipeline.
-          </p>
-        </section>
 
-        <section class="feature">
-          <h2 class="feature-title">AI MEETING SCHEDULER</h2>
-          <p class="feature-description">
-            Book meetings easily—Kassie AI takes care of scheduling, syncing calendars, sending invites, and managing
-            details, so you boost your meeting show rate.
-          </p>
-        </section>
+  <div class="dashboard-wrapper">
+    <img src="assets/images/dashboard-preview.svg" alt="Kassie AI Dashboard Preview" class="dashboard-image" />
 
-        <section class="feature">
-          <h2 class="feature-title">AI PROSPECTING</h2>
-          <p class="feature-description">
-            Tap into hidden opportunities by unlocking powerful buying signals from diverse data sources and
-            conversation intelligence for smarter outreach and better results.
-          </p>
-        </section>
-      </div>
-    </div>
-
-    <!-- Right Container -->
-    <div class="macbook-container">
-      <img src="assets/css/images/Macbook Pro.png" alt="MacBook Pro" class="macbook-image">
-    </div>
+    <h2 class="gradient-text">Built For The Modern Sales Stack</h2>
   </div>
 
-  <div class="ai-features-grid">
-    <section class="feature-card">
-      <h2 class="feature-title">AI COACHING ASSISTANT</h2>
-      <p class="feature-description">
-        Elevate your team’s performance with AI-driven insights—transcribing, scoring, and analyzing every prospecting
-        call.
-      </p>
-    </section>
+  <!-- Next Section: Built For The Modern Sales Stack -->
+  <section class="modern-sales-stack">
+    <div class="stack-container">
+      <div class="logo-row">
+        <!-- Example logos; replace src with your actual file paths -->
+        <img src="assets/images/salesforce-logo.svg" alt="Salesforce" />
+        <img src="assets/images/gong-logo.svg" alt="Gong" />
+        <img src="assets/images/hubspot-logo.svg" alt="HubSpot" />
+        <img src="assets/images/apollo-logo.svg" alt="Apollo.io" />
+        <img src="assets/images/salesloft-logo.svg" alt="Salesloft" />
+        <img src="assets/images/outreach-logo.svg" alt="Outreach" />
+      </div>
+    </div>
+  </section>
+  <div class="feature-container">
+    <div class="left-side-features">
+      <div class="feature">
+        <img src="assets/images/dashboard-preview.svg" alt="Power Dialer">
+        <h2>Power Dialer</h2>
+        <p>Achieve more calls, connections, and conversations effortlessly—Kassie AI handles everything: finding
+          numbers, dialing, bypassing voicemails, leaving messages, and even taking notes, so you can focus on
+          creating sales pipeline.</p>
 
-    <section class="feature-card">
-      <h2 class="feature-title">AI SCORECARDS</h2>
-      <p class="feature-description">
-        Focus coaching where it counts. Instantly analyze and score every prospecting call to uncover growth
-        opportunities and
-        drive better results.
-      </p>
-    </section>
+        <img src="assets/images/data-enrichment.svg" alt="Data Enrichment">
+        <h2>Data Enrichment</h2>
+        <p>Harness 100+ premium data sources and AI-driven research agents—all in one seamless platform.
+          Automate
+          workflows, act on insights instantly and turn data into unstoppable revenue growth.</p>
+      </div>
+    </div>
+    <div class="right-side-features">
+      <div class="feature">
+        <img src="assets/images/meeting-scheduler.svg" alt="Meeting Scheduler">
+        <h2>Meeting Scheduler</h2>
+        <p>Kassie handles scheduling, syncing calendars, sending invites, and managing every detail. Say goodbye
+          to
+          no-shows and hello to a higher meeting show rate!</p>
+      </div>
+      <div class="feature">
+        <h2>Prospect Research</h2>
+        <p>Tap into hidden opportunities by unlocking powerful buying signals from diverse data sources and
+          conversation
+          intelligence for smarter outreach and better results.</p>
+      </div>
+    </div>
 
-    <section class="feature-card">
-      <h2 class="feature-title">AI ANALYTICS</h2>
-      <p class="feature-description">
-        Spot the personas, call times, and talk tracks that drive success. Track call trends and easily identify reps
-        who need
-        your attention.
-      </p>
-    </section>
-
-    <section class="feature-card">
-      <h2 class="feature-title">AI RESEARCH</h2>
-      <p class="feature-description">
-        Find your best prospects with account analysis, scoring, and buying signals. Make smarter moves with clear
-        insights into their fit and behavior.
-      </p>
-    </section>
-
-    <section class="feature-card">
-      <h2 class="feature-title">AI LIST BUILDING</h2>
-      <p class="feature-description">
-        Stop wasting time on random outreach. Use powerful buying signals and enriched data to find and engage your
-        perfect
-        targets.
-      </p>
-    </section>
-
-    <section class="feature-card">
-      <h2 class="feature-title">AI EMAIL</h2>
-      <p class="feature-description">
-        Instantly create personalized emails with key insights from past conversations and buying signals to improve
-        your reply
-        rate.
-      </p>
-    </section>
   </div>
-
-  <section class="integrations">
-    <h2 class="integrations-title">Integrations</h2>
-
-    <div class="integration-grid">
-      <div class="integration-card">
-        <img src="assets/css/images/salesforce-logo.svg" class="integration-logo">
-      </div>
-
-      <div class="integration-card">
-        <img src="assets/css/images/hubspot-logo.svg" alt="HubSpot" class="integration-logo">
-      </div>
-
-      <div class="integration-card">
-        <img src="assets/css/images/apollo-logo.svg" alt="Apollo.io" class="integration-logo">
-      </div>
-
-      <div class="integration-card">
-        <img src="assets/css/images/salesloft-logo.svg" alt="Salesloft" class="integration-logo">
-      </div>
-
-      <div class="integration-card">
-        <img src="assets/css/images/gmail-logo.svg" alt="Gmail" class="integration-logo">
-      </div>
-
-      <div class="integration-card">
-        <img src="assets/css/images/outlook-logo.svg" alt="Outlook" class="integration-logo">
+  <h1><span class="gradient-text ">Empower Your</span> Team To <br> Outperform With Kassie.</h1>
+  <section class="additional-features-container">
+    <div class="additional-features-card">
+      <img src="assets/images/coaching-assistant.svg" alt="Coaching Assistant">
+      <h3>Coaching Assistant</h3>
+      <p>Elevate your team's performance with AI-driven insights—transcribing, scoring, and analyzing every
+        prospecting call.</p>
+    </div>
+    <div class="additional-features-card">
+      <img src="assets/images/call-scorecards.svg" alt="Call Scorecards">
+      <h3>Call Scorecards</h3>
+      <p>Focus on coachable moments, instantly analyze data, and create prospecting call lists to uncover growth
+        opportunities.</p>
+    </div>
+    <div class="additional-features-card">
+      <img src="assets/images/analytics.svg" alt="Analytics">
+      <h3>Analytics</h3>
+      <p>Spot the patterns, optimize, and track trends that drive success. Find weak call moments and easily
+        identify high-value opportunities.</p>
+    </div>
+    <div class="additional-features-card">
+      <h3>Account Research</h3>
+      <p>Find your best prospects with account analysis, scoring, and buying signals. Make smarter moves with
+        clear insights.</p>
+    </div>
+    <div class="additional-features-card">
+      <img src="assets/images/list-building.svg" alt="List Building">
+      <h3>List Building</h3>
+      <p>Stop wasting time on random outreach. Use AI-driven list insights to find and engage your perfect
+        prospects.</p>
+    </div>
+    <div class="additional-features-card">
+      <h3>Email Customization</h3>
+      <p>Instantly create personalized emails with key highlights from past conversations and buying signals to
+        improve reply rates.</p>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="cta-container">
+      <h2>Grow your revenue <br> pipeline with Kassie</h2>
+      <p>Join waitlist to try for free</p>
+      <form class="waitlist-form" id="waitlistForm2" style="padding-bottom: 3rem;">
+        <input type="email" placeholder="Your email" class="email-input-bottom" id="emailInput2" required>
+        <button type="submit" class="join-waitlist-btn" id="submitButton2"> Join Waitlist </button>
+        <div class="status-message" id="statusMessage2" style="color: #2F1893; text-align: center;"></div>
+      </form>
+      <div class="success-message hidden" id="successMessage2" style="color: #2F1893; text-align: center;">
+        You have been added to the waitlist
       </div>
     </div>
   </section>
-  <section>
-    <div class="feature-card">
-      <h1 style="color: #2F1893;">Grow Your Pipeline <br> with Kassie AI</h1>
-      <p style="text-align: center; color: rgba(21, 20, 57, 0.40);">Join the waitlist to try it for<br> free</p>
-    </div>
-    <form class="waitlist-form" id="waitlistForm2" style="padding-bottom: 3rem;">
-      <input type="email" placeholder="Your email" class="email-input" id="emailInput2" required>
-      <button type="submit" class="btn-waitlist-purple" id="submitButton2"> Join</button>
-      <div class="status-message" id="statusMessage2" style="color: #2F1893; text-align: center;"></div>
-    </form>
-    <div class="success-message hidden" id="successMessage2" style="color: #2F1893; text-align: center;">
-      You have been added to the waitlist
-    </div>
-
+  <section class="footer-section">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/images/kassie-logo.svg" alt="Kassie Logo" />
+      </div>
+      <p>© 2025 Kassie AI. All rights reserved.</p>
+      <!-- <div class="footer-nav  ">
+                <ul class="footer-nav   ">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li> -->
   </section>
-
   <script src="assets/js/script.js"></script>
 </body>
 
