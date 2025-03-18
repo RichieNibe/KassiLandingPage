@@ -401,6 +401,30 @@ img {
     max-height: 65px;
 }
 
+/* Special sizing for Gong logo */
+.logo-row img[alt="Gong"] {
+    max-height: 80px;
+    /* Increased size for Gong logo */
+}
+
+/* Special sizing for Outreach logo */
+.logo-row img[alt="Outreach"] {
+    max-height: 100px;
+    /* Increased size for Outreach logo */
+}
+
+/* Special sizing for Salesloft logo */
+.logo-row img[alt="Salesloft"] {
+    max-height: 70px;
+    /* Increased size for Salesloft logo */
+}
+
+/* Special sizing for Apollo logo */
+.logo-row img[alt="Apollo.io"] {
+    max-height: 65px;
+    /* Increased size for Apollo logo */
+}
+
 .logo-row img:hover {
     opacity: 1;
     /* highlight on hover if desired */
@@ -566,6 +590,7 @@ img {
     margin-bottom: 0.75rem;
     object-fit: contain;
     /* Ensures images maintain aspect ratio */
+
 }
 
 .additional-features-card h3 {
