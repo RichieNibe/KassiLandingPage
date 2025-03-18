@@ -3,12 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
+    font-family: 'Poppins';
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    font-family: 'Poppins';
+    background-image: url('background.svg');
+    background-size: cover; /* Ensures it covers the whole viewport */
+   /* Covers the whole screen */ 
+    background-position:top center;
+    background-repeat: no-repeat;
+ 
+  
     /* In case you have other sections below */
+}
+h1{
+    font-size: 3rem;
 }
 
 /* Header Container */
@@ -63,7 +74,7 @@ body {
     font-weight: 500;
     color: #fff;
     /* Example purple gradient */
-    background: linear-gradient(90deg, #7b2ff7 0%, #f107a3 100%);
+    background: #9A1DFC;
     transition: opacity 0.3s;
 }
 
@@ -94,9 +105,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    /* Soft gradient background to match the look */
-    background: linear-gradient(to right, #f8fcff 0%, #ffffff 60%);
-    padding: 4rem 5% 5rem;
+    padding: 8rem 5% 5rem;
     /* top & bottom spacing */
     text-align: center;
     /* center text and CTA */
@@ -107,8 +116,9 @@ body {
     margin: 0 auto;
 }
 
+.additional-features-container h1,
 .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 82px;
     font-weight: 600;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -154,11 +164,11 @@ body {
     font-size: 1rem;
     width: 240px;
     /* Adjust as needed */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
 }
 
 .join-waitlist-btn {
-    background: linear-gradient(90deg, #7b2ff7 0%, #f107a3 100%);
+    background: #9A1DFC;
     border: none;
     color: #fff;
     padding: 0.75rem 1.5rem;
@@ -188,44 +198,6 @@ body {
     }
 }
 
-.wave-section {
-    position: relative;
-    padding: 2rem 5rem;
-    text-align: center;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    /* If you want white or colored text on top of the gradient */
-    color: #fff;
-}
-
-/* Wave background wrapper */
-.wave-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    /* behind the main content */
-    overflow: hidden;
-}
-
-/* Wave image itself */
-.wave-bg img {
-    /* Tweak size/position so it looks good with the gradient behind it */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    /* If your wave image is very large or if you want it cropped,
-       you might use object-fit. (But usually a wave is simpler.)
-    */
-    /* object-fit: cover; */
-}
 
 /* Content wrapper for the dashboard preview (and text) */
 .dashboard-wrapper {
@@ -259,7 +231,6 @@ body {
     /* You can match the spacing or background style of the rest of your site */
     padding: 4rem 5%;
     text-align: center;
-    background-color: #fff;
     /* or a gradient, etc. */
 }
 
@@ -309,7 +280,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 80px;
     /* space between logos */
 }
 
@@ -343,12 +314,21 @@ body {
     }
 }
 
-.container {
-    display: grid;
+.feature-container {
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 100px;
+    padding-bottom: 2rem;
+
+}
+
+.right-side-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+
+
 }
 
 .feature {
@@ -367,12 +347,84 @@ body {
 }
 
 .feature h2 {
-    margin: 15px 0;
-    font-size: 20px;
-    font-weight: bold;
+    color: #000012;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 174%;
+    text-transform: capitalize;
 }
 
 .feature p {
     font-size: 16px;
     color: #555;
+}
+
+.additional-features-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 10%;
+    gap: 2rem;
+
+}
+
+.additional-features-container-header {
+    grid-area: hd;
+}
+
+.additional-features-card {
+    background-color: #F5F9FF;
+    width: 400px;
+    height: 380px;
+    padding: 20px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+.additional-features-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.additional-features-card p {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.cta-section {
+    display: inline-flex;
+    align-items: center;
+}
+
+.cta-container {
+    width: 1240px;
+    padding: 90px;
+    flex-shrink: 2;
+    justify-content: center;
+    border-radius: 20px;
+    background: #136FF4;
+}
+
+.cta-section h2 {
+    font-size: 65px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.cta-section p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Soft left-to-right gradient */
+    /* background: linear-gradient(to right, #eaf4ff 0%, #ffffff 100%); */
+    padding: 1rem 5%;
 }
