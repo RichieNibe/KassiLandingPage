@@ -10,15 +10,17 @@
 body {
     font-family: 'Poppins';
     background-image: url('background.svg');
-    background-size: cover; /* Ensures it covers the whole viewport */
-   /* Covers the whole screen */ 
-    background-position:top center;
+    background-size: cover;
+    /* Ensures it covers the whole viewport */
+    /* Covers the whole screen */
+    background-position: top center;
     background-repeat: no-repeat;
- 
-  
+
+
     /* In case you have other sections below */
 }
-h1{
+
+h1 {
     font-size: 3rem;
 }
 
@@ -29,7 +31,7 @@ h1{
     justify-content: space-between;
     /* Soft left-to-right gradient */
     /* background: linear-gradient(to right, #eaf4ff 0%, #ffffff 100%); */
-    padding: 1rem 5%;
+    padding: 2rem 5%;
 }
 
 /* Logo */
@@ -264,9 +266,6 @@ h1{
     color: transparent;
     -webkit-text-fill-color: transparent;
     /* Improves rendering in WebKit-based browsers */
-
-    /* Basic text styling */
-    font-size: 3rem;
     /* Adjust as you like */
     font-weight: 600;
     text-align: center;
@@ -318,6 +317,7 @@ h1{
     display: flex;
     justify-content: center;
     padding-bottom: 2rem;
+    flex-wrap: wrap;
 
 }
 
@@ -369,6 +369,13 @@ h1{
 
 }
 
+@media (max-width: 900px) {
+    .additional-features-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Wrap effect */
+    }
+}
+
 .additional-features-container-header {
     grid-area: hd;
 }
@@ -376,11 +383,9 @@ h1{
 .additional-features-card {
     background-color: #F5F9FF;
     width: 400px;
-    height: 380px;
     padding: 20px;
-    flex-shrink: 0;
     border-radius: 12px;
-    text-align: center;
+    
 }
 
 
@@ -396,18 +401,18 @@ h1{
 }
 
 .cta-section {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .cta-container {
-    width: 1240px;
-    padding: 90px;
-    flex-shrink: 2;
+    width: 90%;
+    padding: 30px;
     justify-content: center;
     border-radius: 20px;
     background: #136FF4;
 }
+
 
 .cta-section h2 {
     font-size: 65px;
