@@ -353,48 +353,52 @@ h1 {
     display: inline-block;
 }
 
+/* Image optimization for all devices */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Logo Row Styles */
 .logo-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    /* space between logos */
+    gap: 40px;
+    /* Reduced from 80px for better mobile spacing */
+    padding: 1rem;
 }
 
 .logo-row img {
     max-height: 40px;
-    /* or however tall you want each logo */
     width: auto;
-    /* keeps aspect ratio */
     opacity: 0.9;
-    /* subtle fade */
-    transition: opacity 0.2s ease;
+    transition: opacity 0.3s ease;
+    object-fit: contain;
+    /* Ensures logos maintain aspect ratio */
 }
 
 /* Special sizing for Gong logo */
 .logo-row img[alt="Gong"] {
     max-height: 80px;
-    /* Increased size for Gong logo */
 }
 
 /* Special sizing for Outreach logo */
 .logo-row img[alt="Outreach"] {
     max-height: 100px;
-    /* Increased size for Outreach logo */
 }
 
 /* Special sizing for Salesloft logo */
 .logo-row img[alt="Salesloft"] {
     max-height: 70px;
-    /* Increased size for Salesloft logo */
 }
 
 /* Special sizing for Apollo logo */
 .logo-row img[alt="Apollo.io"] {
     max-height: 65px;
-    /* Increased size for Apollo logo */
 }
 
 .logo-row img:hover {
@@ -402,18 +406,73 @@ h1 {
     /* highlight on hover if desired */
 }
 
-/* Responsive Adjustments (optional) */
-@media (max-width: 600px) {
-    .stack-heading {
-        font-size: 1.4rem;
-    }
-
+/* Responsive Adjustments for images */
+@media (max-width: 768px) {
     .logo-row {
-        gap: 1rem;
+        gap: 20px;
+        /* Further reduced for mobile */
     }
 
     .logo-row img {
-        max-height: 30px;
+        max-height: 35px;
+        /* Slightly reduced base size for mobile */
+    }
+
+    .logo-row img[alt="Gong"] {
+        max-height: 60px;
+        /* Proportionally reduced for mobile */
+    }
+
+    .logo-row img[alt="Outreach"] {
+        max-height: 75px;
+        /* Proportionally reduced for mobile */
+    }
+
+    .logo-row img[alt="Salesloft"] {
+        max-height: 50px;
+        /* Proportionally reduced for mobile */
+    }
+
+    .logo-row img[alt="Apollo.io"] {
+        max-height: 45px;
+        /* Proportionally reduced for mobile */
+    }
+
+    .feature img {
+        margin-bottom: 0.75rem;
+        /* Reduced spacing on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-row {
+        gap: 15px;
+        /* Minimum spacing for very small screens */
+    }
+
+    .logo-row img {
+        max-height: 25px;
+        /* Smaller for very small screens */
+    }
+
+    .logo-row img[alt="Gong"] {
+        max-height: 45px;
+        /* Proportionally reduced for very small screens */
+    }
+
+    .logo-row img[alt="Outreach"] {
+        max-height: 55px;
+        /* Proportionally reduced for very small screens */
+    }
+
+    .logo-row img[alt="Salesloft"] {
+        max-height: 40px;
+        /* Proportionally reduced for very small screens */
+    }
+
+    .logo-row img[alt="Apollo.io"] {
+        max-height: 35px;
+        /* Proportionally reduced for very small screens */
     }
 }
 
@@ -455,6 +514,9 @@ h1 {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    /* Ensures images maintain aspect ratio */
 }
 
 .feature h2 {
@@ -502,6 +564,8 @@ h1 {
     max-width: 100%;
     height: auto;
     margin-bottom: 0.75rem;
+    object-fit: contain;
+    /* Ensures images maintain aspect ratio */
 }
 
 .additional-features-card h3 {
