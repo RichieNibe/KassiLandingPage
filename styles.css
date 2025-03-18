@@ -362,7 +362,7 @@ h1 {
 
 .additional-features-container {
     display: grid;
-    width: 100%;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem 10%;
     gap: 2rem;
@@ -385,7 +385,7 @@ h1 {
     width: 400px;
     padding: 20px;
     border-radius: 12px;
-    
+
 }
 
 
