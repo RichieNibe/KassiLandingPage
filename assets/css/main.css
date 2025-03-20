@@ -36,6 +36,8 @@ h1 {
 /* Logo */
 .logo-area img {
     height: 40px;
+    margin-left: -1.25rem;
+
     /* Adjust as needed */
 }
 
