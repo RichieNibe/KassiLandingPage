@@ -152,10 +152,7 @@ h1 {
 
 /* Responsive (Optional) */
 @media (max-width: 768px) {
-    .top-header {
-        flex-wrap: wrap;
-        padding: 1rem;
-    }
+
 
     .nav-center {
         margin: 1rem 0;
@@ -380,24 +377,15 @@ img {
     /* Ensures logos maintain aspect ratio */
 }
 
-/* Special sizing for Gong logo */
-.logo-row img[alt="Gong"] {
-    max-height: 80px;
-}
-
-/* Special sizing for Outreach logo */
-.logo-row img[alt="Outreach"] {
-    max-height: 100px;
-}
 
 /* Special sizing for Salesloft logo */
 .logo-row img[alt="Salesloft"] {
-    max-height: 70px;
+    max-height: 100px;
 }
 
 /* Special sizing for Apollo logo */
 .logo-row img[alt="Apollo.io"] {
-    max-height: 65px;
+    max-height: 100px;
 }
 
 /* Special sizing for Gong logo */
@@ -408,21 +396,12 @@ img {
 
 /* Special sizing for Outreach logo */
 .logo-row img[alt="Outreach"] {
-    max-height: 100px;
+    max-height: 150px;
     /* Increased size for Outreach logo */
 }
 
-/* Special sizing for Salesloft logo */
-.logo-row img[alt="Salesloft"] {
-    max-height: 70px;
-    /* Increased size for Salesloft logo */
-}
 
-/* Special sizing for Apollo logo */
-.logo-row img[alt="Apollo.io"] {
-    max-height: 65px;
-    /* Increased size for Apollo logo */
-}
+
 
 .logo-row img:hover {
     opacity: 1;
