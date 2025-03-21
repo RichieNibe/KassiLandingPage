@@ -351,6 +351,11 @@ h1 {
     display: inline-block;
 }
 
+.dashboard-image {
+    width: 750px;
+    height: 600px;
+}
+
 /* Image optimization for all devices */
 img {
     max-width: 100%;
