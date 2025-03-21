@@ -702,3 +702,24 @@ img {
         font-size: 1.1rem;
     }
 }
+
+/* Specific sizing for feature images */
+.feature img[alt="Power Dialer"],
+.feature img[alt="Data Enrichment"],
+.feature img[alt="Meeting Scheduler"] {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media (max-width: 480px) {
+
+    .feature img[alt="Power Dialer"],
+    .feature img[alt="Data Enrichment"],
+    .feature img[alt="Meeting Scheduler"] {
+        max-width: 250px;
+        /* Even smaller for very small screens */
+    }
+}
