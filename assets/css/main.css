@@ -352,8 +352,17 @@ h1 {
 }
 
 .dashboard-image {
-    width: 750px;
+    width: 700px;
     height: 600px;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .dashboard-image {
+        width: 100%;
+        height: auto;
+        max-width: 700px;
+    }
 }
 
 /* Image optimization for all devices */
