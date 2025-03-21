@@ -641,6 +641,11 @@ img {
     }
 }
 
+.footer-logo {
+    height: 40px;
+    width: 160px;
+}
+
 .footer-container {
     display: flex;
     align-items: center;
